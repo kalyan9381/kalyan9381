@@ -1,0 +1,57 @@
+             ------------java and maven installation steps--------------
+    
+
+    2    yum install wget -y
+    3   wget http://www.eu.apache.org/dist/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz
+    4  ls
+    5  cd /usr/local
+    6  pwd
+    7  mkdir apache-maven
+    8  cd apache-maven/
+    9  pwd
+   10  cd centos
+   11  cd /home/centos
+   12  tar -xzf apache-maven-3.3.9-bin.tar.gz
+   13  ls
+   14  cd apache-maven-3.3.9
+   15  mv */usr/local/apache-maven
+   16  mv /usr/local/apache-maven
+   17  mv  /usr/local/apache-maven
+   18  mv  /usr/local/apache-maven/
+   19  mv * /usr/local/apache-maven/
+   20*
+   21  cd /usr/local/apache-maven/
+   22  ls
+   23  cd /home/centos/
+   24  vi ~/.bashrc
+   25  source ~/.bashrc
+   26  mvn --version
+   27  vi ~/.bashrc
+   28  java --version
+   29  cd /home/centos
+   30  mv jdk-8u171-linux-x64.tar.gz /opt
+   31  cd /opt
+   32  tar -xzf jdk-8u171-linux-x64.tar.gz
+   33  cd jdk1.8.0_171
+   34  pwd
+   35  vi ~/.bashrc
+   36  source ~/.bashrc
+   37  yum install java -y
+   38  yum install maven -y
+   39  java -version
+   40  maven -version
+   41  mvn -version
+   42  history
+
+
+     -----------------------------jenkins installation steps---------------------------
+
+       sudo yum install epel-release
+       sudo yum update
+       wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins.io/redhat-stable                                                                                                                                  /jenkins.repo
+       rpm --import http://pkg.jenkins.io/redhat-stable/jenkins.io.key
+       yum install jenkins -y
+       systemctl start jenkins
+       systemctl enable jenkins
+       cat /var/lib/jenkins/secrets/initialAdminPassword
+       history
